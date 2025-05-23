@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="styleSheet" href="style.css"/>
+</head>
+<body>
+  <div id="startPage">
+    <h1>Welcome to question🗿☕</h1>
+    <input type="text" id="usernameInput" placeholder="Masukkan nama kamu">
+    <button onclick="startQuiz()">Mulai Kuis</button>
+    <button onclick="showLeaderboard()">Lihat Leaderboard</button>
+    <button onclick="showHistory()">Lihat Riwayat</button>
+  </div>
+
+  <div id="quizPage" style="display:none">
+    <h2 id="questionText"></h2>
+    <div id="options"></div>
+  </div>
+
+  <div id="scorePage" style="display:none">
+    <h2 id="scoreText"></h2>
+    <button onclick="showLeaderboard()">Lihat Leaderboard</button>
+    <button onclick="showHistory()">Lihat Riwayat</button>
+    <button onclick="goBack()">Kembali ke Awal</button>
+  </div>
+
+  <div id="leaderboardPage" style="display:none">
+    <h2>Leaderboard</h2>
+    <ul id="leaderboardList"></ul>
+    <button onclick="goBack()">Kembali</button>
+  </div>
+
+  <div id="historyPage" style="display:none">
+    <h2>Riwayat Jawaban</h2>
+    <ul id="historyList"></ul>
+    <button onclick="goBack()">Kembali</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="srever.js"></script>
+</body>
+</html>
